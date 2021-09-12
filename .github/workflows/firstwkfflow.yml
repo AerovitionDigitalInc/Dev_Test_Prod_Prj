@@ -63,13 +63,13 @@ jobs:
           # Workaround to pass job status to post job step. This variable is not intended for manual setting
     #      job-status: $ # optional, default is ${{ job.status }}
     
-      - name:Build and Push Docker  Image
-        uses:# mr-smithers-excellent/docker-build-push@v4
-        with:
-           image: # xyz/application-name
-           registery: docker.io
-           username: ${{ secrets.DOCKER_USERNAME}}
-           password: ${{ secrets.DOCKER_PASSWORD }}
+     # - name:Build and Push Docker  Image
+        # uses:# mr-smithers-excellent/docker-build-push@v4
+       #  with:
+           # image: # xyz/application-name
+           # registery: docker.io
+          #  username: ${{ secrets.DOCKER_USERNAME}}
+         #   password: ${{ secrets.DOCKER_PASSWORD }}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
